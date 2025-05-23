@@ -409,6 +409,8 @@ And add this to my VIMRC:
 
 ```vim
 let g:ale_linters = {'rust': ['analyzer']} " ALE use 'rust-analyzer' as the LSP server
+let g:ale_completion_enabled = 1 " Use ALE for omnicomplete, see :h ins-completion :h ins-completion-menu :h popupmenu-keys :h popupmenu-completion
+let g:ale_cursor_detail = 0 " =1 : Open preview window when cursor moves onto line with problems
 ```
 
 Generate Vim help for `ale`:
